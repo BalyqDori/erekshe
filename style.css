@@ -146,6 +146,15 @@ textarea{
     padding: 1.5em 2em;
 }
 
+.more-link{
+    display: inline-block;
+    margin: 1em 1em;
+}
+
+.section-subheader{
+    display: inline-block;
+}
+
 .division{
     display: grid;
     gap: 2em;
