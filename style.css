@@ -19,6 +19,10 @@ html{
     background-color: var(--beige-color);
 }
 
+body{
+    margin: 0;
+}
+
 img{
   max-width: 100%;
 }
@@ -194,9 +198,14 @@ textarea{
     flex: 70%;
 }
 
-.question,
+.location,
 .mission{
     background-color: var(--chocolate-color);
+}
+
+.question,
+.among-us{
+    background-color: var(--accent-color);
 }
 
 .among-us,
