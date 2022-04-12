@@ -1,0 +1,260 @@
+/*=============
+  Genereal
+===============*/
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  /* --brown-color: #BF9270; */
+  --chocolate-color: #E3B7A0;
+  --accent-color: #EDCDBB;
+  --beige-color: #FFEDDB;
+}
+
+html{
+    background-color: var(--beige-color);
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+}
+
+header{
+    background-color: var(--beige-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 3em;
+}
+
+footer{
+  background-color: var(--beige-color);
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2em 2em;
+}
+
+h1{
+  margin: 0;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input, textarea{
+    width: 500px;
+    padding: 0.5em;
+    font-size: 1.125;
+}
+
+textarea{
+    height: 200px;
+}
+
+/*=============
+  Typography
+===============*/
+
+/* fonts */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-link,
+.nav-link{
+    color: var(--black-color);
+    font-size: 1.25rem;
+}
+
+.add-to-card{
+    font-size: 1.1rem;
+}
+
+.nav-logo{
+    text-decoration: none;
+    color: var(--black-color)
+}
+
+.logo-text{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.section-header{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section-subheader{
+    font-size: 2rem;
+}
+
+
+.product > .name{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.mission-desc{
+    font-size: 1.5rem;
+}
+
+.about-us-list{
+    font-size: 1.5rem;
+}
+
+/*=============
+  Layout
+===============*/
+
+/* navbar */
+.nav-menu{
+    display: flex;
+}
+
+.nav-list-item{
+    padding: 1em;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+
+/* showcase */
+.products-showcase{
+    background-color: var(--accent-color);
+    padding: 1.5em 2em;
+}
+
+.division{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.product{
+    background-color: var(--chocolate-color);
+    padding: 1em 2em;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 13px 5px rgba(0, 0, 0, 0.25);
+    margin: 1em 2.5em;
+}
+
+.product > .name{
+    margin-bottom: 0;
+}
+
+.product > .product-img{
+    border-radius: 2.5rem;
+}
+
+.add-to-card{
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: none;
+    padding: 0.5em;
+    outline: none;
+}
+
+.add-to-card:hover{
+    opacity: 0.9;
+}
+
+.add-to-card:active{
+    opacity: 0.7;
+}
+
+/* mission */
+.sub-mission{
+    display: flex;
+}
+
+.mission-desc{
+    flex: 30%;
+}
+
+.mission-img{
+    max-width: 400px;
+    flex: 70%;
+}
+
+.question,
+.mission{
+    background-color: var(--chocolate-color);
+}
+
+.among-us,
+.mission,
+.question{
+    padding: 1em 3em;
+}
+
+/* location */
+.our-location{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cc/Nur-Sultan_at_the_evening_%28cropped%29.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.location-name{
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+  background-color: var(--beige-color);
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 2em;
+  padding-bottom: 3em;
+}
+
+.footer-info{
+  flex: 75%;
+}
+
+.footer-links{
+  flex: 25%;
+}
+
+.footer-main{
+  display: flex;
+  margin-bottom: 3em;
+  align-items: center;
+}
+
+.footer-number{
+  margin: 0;
+  margin-bottom: 0.625em;
+}
+
+.footer-link:hover{
+  opacity: 0.8;
+}
+
+.footer-list-item{
+  margin-bottom: 0.375em;
+}
