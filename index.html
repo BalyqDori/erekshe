@@ -1,210 +1,432 @@
-<!DOCTYPE html> 
-<html lang="en"> 
- 
-<head> 
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>Online Jewely Store</title>
-    <link rel="icon" type="image/jpg" href="favicon.ico"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <!------ NAVBAR ------>
+    <link rel="icon" type="image/jpg" href="favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <a class="nav-logo" href="/erekshe">
+   
+        <nav class="navbar">
+          <a href="index.html" class="navbar-brand" id="nav-logo">
             <i class="fa fa-diamond" style="font-size: 3rem"></i>
-            <p class="logo-text">EREKSHE<br>BRAND</p>
-        </a>
-        <ul class="nav-menu">
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">RINGS</a>
+            <p class="logo-text">EREKSHE<br />BRAND</p>
+          </a>
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="/erekshe/rings.html" class="nav-link">RINGS</a>
             </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">EARINGS</a>
+            <li class="nav-item">
+              <a href="/erekshe/bracelets.html" class="nav-link">BRACELETS</a>
             </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">NECKLACES</a>
+            <li class="nav-item">
+              <a href="/erekshe/necklaces.html" class="nav-link">NECKLACES</a>
             </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">KAZAKH JEWELRY</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">KAZAKH JEWELRY</a>
             </li>
-        </ul>
+          </ul>
+        </nav>
     </header>
     <!-- ---- ----- ------>
 
-
     <!------ MAIN ------>
+    <section class="main">
+      <video width="80%" height="40%" autoplay muted>
+        <source src="advertisement.mp4" type="video/mp4" />
+      </video>
+    </section>
     <section class="products-showcase">
-        <h1 class="section-header">OUR PRODUCTS</h1>
-        <hr>
-        <div class="earings">
-            <h2 class="section-subheader">EARINGS</h2> <a class="more-link" href="#">View More</a>
-            <div class="division">
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23692/original/0_Bold_Hoops_15mm_FrontAngled.jpg?1645652697" alt="product-img">
-                    <h2 class="name">Bold Small Hoops</h2>
-                    <p class="description">You know them, you love them: they're your favorite hoops. Those outfit-elevating, mood-boosting, can't-go-wrong hoops. Upgrade your eardrobe with this bold piece that’s handcrafted in recycled 14k solid gold.<p>
-                    <p class="price"><strong><em>350$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/18021/original/DiamondTennis_earring_yg_front.jpg?1605898821" alt="product-img">
-                    <h2 class="name">Large Diamond Studs</h2>
-                    <p class="description">Meet your new best friend for decades to come. As Lorelei Lee once observed: “Square-cut or pear-shaped, these rocks don't lose their shape.” Each piece is made-to-order and handcrafted with a unique diamond setting, so please allow for a longer ship time.<p>
-                    <p class="price"><strong><em>1500$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20202/original/0_Pave%CC%81DiamondClimber_earrings_yg_hero_Comp.jpg?1622670368" alt="product-img">
-                    <h2 class="name">Pavé Diamond Climbers</h2>
-                    <p class="description">Zhuzh up your ear stack with a pavé diamond head-turner that doubles your ear’s real estate. Single piercing or not. Handcrafted in 14k solid gold and set with pavé diamonds.<p>
-                    <p class="price"><strong><em>550$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
+      <h1 class="section-header">OUR PRODUCTS</h1>
+      <hr />
+      <div class="container-fluid">
+        <h2 class="section-subheader">BRACELETS</h2>
+        <a class="more-link" href="/erekshe/bracelets.html">View More</a>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23692/original/0_Bold_Hoops_15mm_FrontAngled.jpg?1645652697"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bold Small Hoops</h5>
+                <p class="card-text">
+                  You know them, you love them: they're your favorite hoops.
+                  Those outfit-elevating, mood-boosting, can't-go-wrong hoops.
+                  Upgrade your eardrobe with this bold piece that’s handcrafted
+                  in recycled 14k solid gold.
+                </p>
+                <p class="price">
+                  <strong><em>350$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
             </div>
-        </div>
-        <hr>
-        <div class="necklaces">
-            <h2 class="section-subheader">NECKLACES</h2> <a class="more-link" href="#">View More</a>
-            <div class="division">
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/16917/original/Herringbone_necklace_v_hero_0179.jpg?1605794204" alt="product-img">
-                    <h2 class="name">Bold Herringbone Chain Necklace</h2>
-                    <p class="description">If you’re looking to add some herringbone into your wardrobe, this necklace is a solid choice for a new staple. Available in two lengths, so you can style it solo or double up.<p>
-                    <p class="price"><strong><em>198$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20931/original/0_LayeredOpalNecklace_Opal_V_Front_Hero.jpg?1629368883" alt="product-img">
-                    <h2 class="name">Layered Opal Necklace</h2>
-                    <p class="description">Shoo away your stacking woes with two chains bound seamlessly with a AAA quality cabochon cut opal pendant. Handcrafted in 18k gold vermeil.<p>
-                    <p class="price"><strong><em>128$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20202/original/0_Pave%CC%81DiamondClimber_earrings_yg_hero_Comp.jpg?1622670368" alt="product-img">
-                    <h2 class="name">Large Diamond Necklace</h2>
-                    <p class="description">Double the size of the Diamond Necklace and handcrafted into a large brilliant-cut set in 14k solid gold. It’s an heirloom-worthy piece you can hold on to forever — to pass on or keep all to yourself.<p>
-                    <p class="price"><strong><em>1000$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="rings">
-            <h2 class="section-subheader">RINGS</h2> <a class="more-link" href="#">View More</a>
-            <div class="division">
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23580/original/0_BlockRing_V_Hero.jpg?1645028890" alt="product-img">
-                    <h2 class="name">Black Ring</h2>
-                    <p class="description">Build with a pointed statement that’s stackable, mixable and very wearable. Inspired by angular, modernist architecture and handcrafted in 18k gold vermeil. Add some edge(s) and follow your two-tone dreams by pairing both shades together.<p>
-                    <p class="price"><strong><em>78$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/18587/original/Snake_ring_yg_hero0394.jpg?1606424362" alt="product-img">
-                    <h2 class="name">Snake Ring</h2>
-                    <p class="description">Love at first bite. Meet the snake ring that’ll charm them all. A symbol of eternity and rebirth, handcrafted in 14k solid gold.<p>
-                    <p class="price"><strong><em>350$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-                <div class="product">
-                    <img class="product-img" src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22552/original/1_BoldDiamondEternityRing_YG_Hero.jpg?1635540708" alt="product-img">
-                    <h2 class="name">Bold Diamond Eternity Ring</h2>
-                    <p class="description">Finding a ring you’ll love for a lifetime is something to celebrate. Here it is: a bold ring handcrafted in 14k solid gold featuring as many as 23 round brilliant cut diamonds.<p>
-                    <p class="price"><strong><em>2500$</em></strong></p>
-                    <button class="add-to-card"><strong>ADD TO CARD</strong></button>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/18021/original/DiamondTennis_earring_yg_front.jpg?1605898821"
+                alt="product-img"
+              />
 
+              <div class="card-body">
+                <h5 class="card-title">Large Diamond Studs</h5>
+                <p class="card-text">
+                  Meet your new best friend for decades to come. As Lorelei Lee
+                  once observed: “Square-cut or pear-shaped, these rocks don't
+                  lose their shape.” Each piece is made-to-order and handcrafted
+                  with a unique diamond setting, so please allow for a longer
+                  ship time.
+                </p>
+                <p class="price">
+                  <strong><em>1500$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20202/original/0_Pave%CC%81DiamondClimber_earrings_yg_hero_Comp.jpg?1622670368"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title" id="name">Pavé Diamond Climbers</h5>
+                <p class="card-text" id="description">
+                  Zhuzh up your ear stack with a pavé diamond head-turner that
+                  doubles your ear’s real estate. Single piercing or not.
+                  Handcrafted in 14k solid gold and set with pavé diamonds.
+                </p>
+                <p class="price">
+                  <strong><em>2500$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary" id="add-to-card"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Necklaces -->
+      <hr />
+      <div class="container-fluid">
+        <h2 class="section-subheader">NECKLACES</h2>
+        <a class="more-link" href="/erekshe/bracelets.html">View More</a>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/16917/original/Herringbone_necklace_v_hero_0179.jpg?1605794204"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bold Herringbone Chain Necklace</h5>
+                <p class="card-text">
+                  If you’re looking to add some herringbone into your wardrobe,
+                  this necklace is a solid choice for a new staple. Available in
+                  two lengths, so you can style it solo or double up.
+                </p>
+                <p class="price">
+                  <strong><em>198$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20931/original/0_LayeredOpalNecklace_Opal_V_Front_Hero.jpg?1629368883"
+                alt="product-img"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Layered Opal Necklace</h5>
+                <p class="card-text">
+                  Shoo away your stacking woes with two chains bound seamlessly
+                  with a AAA quality cabochon cut opal pendant. Handcrafted in
+                  18k gold vermeil.
+                </p>
+                <p class="price">
+                  <strong><em>128$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20202/original/0_Pave%CC%81DiamondClimber_earrings_yg_hero_Comp.jpg?1622670368"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title" id="name">Large Diamond Necklace</h5>
+                <p class="card-text" id="description">
+                  Double the size of the Diamond Necklace and handcrafted into a
+                  large brilliant-cut set in 14k solid gold. It’s an
+                  heirloom-worthy piece you can hold on to forever — to pass on
+                  or keep all to yourself.
+                </p>
+                <p class="price">
+                  <strong><em>100$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary" id="add-to-card"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---- ---- ------>
+      <!-- Rings -->
+      <hr />
+      <div class="container-fluid">
+        <h2 class="section-subheader">Rings</h2>
+        <a class="more-link" href="/erekshe/bracelets.html">View More</a>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23692/original/0_Bold_Hoops_15mm_FrontAngled.jpg?1645652697"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black Ring</h5>
+                <p class="card-text">
+                  Build with a pointed statement that’s stackable, mixable and
+                  very wearable. Inspired by angular, modernist architecture and
+                  handcrafted in 18k gold vermeil. Add some edge(s) and follow
+                  your two-tone dreams by pairing both shades together.
+                </p>
+                <p class="price">
+                  <strong><em>78$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/18587/original/Snake_ring_yg_hero0394.jpg?1606424362"
+                alt="product-img"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Snake Ring</h5>
+                <p class="card-text">
+                  Love at first bite. Meet the snake ring that’ll charm them
+                  all. A symbol of eternity and rebirth, handcrafted in 14k
+                  solid gold.
+                </p>
+                <p class="price">
+                  <strong><em>350$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" id="card">
+              <img
+                class="card-img-top"
+                src="https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22552/original/1_BoldDiamondEternityRing_YG_Hero.jpg?1635540708"
+                alt="product-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title" id="name">Bold Diamond Eternity Ring</h5>
+                <p class="card-text" id="description">
+                  Finding a ring you’ll love for a lifetime is something to
+                  celebrate. Here it is: a bold ring handcrafted in 14k solid
+                  gold featuring as many as 23 round brilliant cut diamonds.
+                </p>
+                <p class="price">
+                  <strong><em>2500$</em></strong>
+                </p>
+                <a href="#" class="btn btn-primary" id="add-to-card"
+                  ><strong>ADD TO CARD</strong></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---- ---- ---- -->
+    <!-- Mission -->
     <section class="mission">
-        <h1 class="section-header">MISSION</h1>
-        <hr>
-        <div class="sub-mission">
-            <p class="mission-desc">By strengthening self-confidence
-                and self-love through eco-friendly
-                jewelry, we make the world
-                brighter, better and friendlier</p>
-            <img class="mission-img" src="https://cdn-academyblog.pressidium.com/wp-content/uploads/2019/11/Ethical-Jewelry_JEM_077_Enlightened_Majesty_Courage-Chest-Piece_Azita-Mireshghi.jpg" alt="eco friendly jewelry">
+      <h1 class="section-header">MISSION</h1>
+      <hr />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8">
+            <p class="mission-desc">
+              By strengthening self-confidence and self-love through
+              eco-friendly jewelry, we make the world brighter, better and
+              friendlier
+            </p>
+          </div>
+          <div class="col-4">
+            <img
+              class="mission-img"
+              src="https://cdn-academyblog.pressidium.com/wp-content/uploads/2019/11/Ethical-Jewelry_JEM_077_Enlightened_Majesty_Courage-Chest-Piece_Azita-Mireshghi.jpg"
+              alt="eco friendly jewelry"
+            />
+          </div>
         </div>
+      </div>
     </section>
-        
+    <!-- ---- ----- ------>
+
+    <!-- About US -->
     <section class="among-us">
-        <h1 class="section-header">ABOUT US</h1>
-        <hr>
+      <h1 class="section-header">ABOUT US</h1>
+      <hr />
+      <div class="container-fluid">
         <ol class="about-us-list">
-            <li>Our products are all unisex, which blurs gender boundaries.</li>
-            <li>Use of stainless steel and eco-friendly materials (recycled glass
-                and plastic)</li>
-            <li>Digitalization of our brand makes it possible to try on all
-                products</li>
-            <li>Our customers will feel even more beautiful, confident, as it will
-                be their highlight!</li>
+          <li>Our products are all unisex, which blurs gender boundaries.</li>
+          <li>
+            Use of stainless steel and eco-friendly materials (recycled glass
+            and plastic)
+          </li>
+          <li>
+            Digitalization of our brand makes it possible to try on all products
+          </li>
+          <li>
+            Our customers will feel even more beautiful, confident, as it will
+            be their highlight!
+          </li>
         </ol>
+      </div>
     </section>
-
+    <!-- ---- ----- ------>
+    <!-- Location -->
     <section class="location">
-        <h1 class="section-header">SHOP'S LOCATION</h1>
-        <hr>
-        <div class="our-location">
-            <div class="section-header location-name">NUR-SULTAN<br>CITY</div>
-        </div>
+      <h1 class="section-header">SHOP'S LOCATION</h1>
+      <hr />
+      <div class="our-location">
+        <div class="section-header location-name">NUR-SULTAN<br />CITY</div>
+      </div>
     </section>
-
+<!-- ---- ---- ---- -->
+<!-- Question form -->
     <section class="question">
-        <h1 class="section-header">HAVE A QUESTION?</h1>
-        <hr>
+      <h1 class="section-header">HAVE A QUESTION?</h1>
+      <hr />
+      <div class="d-flex justify-content-center">
         <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="question">Question:</label><br>
-            <textarea id="question"></textarea><br>
-            <button class="add-to-card"><strong>SUBMIT!</strong></button>
+          <div class="form-group">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+          </div>
+          <div class="form-group">
+            <label for="question">Question:</label><br />
+            <textarea id="question"></textarea><br />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <strong>Submit</strong>
+          </button>
         </form>
-        <hr>
+      </div>
+      <hr />
     </section>
     <!-- ---- ----- ------>
-    <!------ FOOTER ------>
-    <footer>
-        <div class="footer">
-            <div class="footer-main">
-                <div class="footer-info">
-                    <h1 class="footer-number">
-                        8 800 555 3535
-                    </h1>
-                </div>
+    <!-- Footer -->
+    <footer class="foooter">
+      <div class="footer">
+          <div class="footer-main">
+              <div class="footer-info">
+                  <h1 class="footer-number">
+                      8 800 555 3535
+                  </h1>
+              </div>
 
-                <div class="footer-links">
-                    <div class="footer-nav">
-                        <ul class="footer-list">
-                            <li class="footer-list-item">
-                                <a href="#" class="footer-link" >Partners</a>
-                            </li>
-                            <li class="footer-list-item">
-                                <a href="#" class="footer-link" >About us</a>
-                            </li>
-                            <li class="footer-list-item">
-                                <a href="#" class="footer-link" >Contact us</a>
-                            </li>
-                            <li class="footer-list-item">
-                                <a href="#" class="footer-link" >FAQ</a>
-                            </li>
-                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ---- ----- ------>
-</body>
+              <div class="footer-links">
+                  <div class="footer-nav">
+                      <ul class="footer-list">
+                          <li class="footer-list-item">
+                              <a href="#" class="footer-link" >Partners</a>
+                          </li>
+                          <li class="footer-list-item">
+                              <a href="#" class="footer-link" >About us</a>
+                          </li>
+                          <li class="footer-list-item">
+                              <a href="#" class="footer-link" >Contact us</a>
+                          </li>
+                          <li class="footer-list-item">
+                              <a href="#" class="footer-link" >FAQ</a>
+                          </li>
+                       </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- ---- ----- ------>
+  </body>
+</html>

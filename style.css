@@ -20,6 +20,7 @@ html{
 }
 
 body{
+    background-color: var(--beige-color);
     margin: 0;
 }
 
@@ -35,9 +36,7 @@ ul{
 
 header{
     background-color: var(--beige-color);
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em 3em;
+
 }
 
 footer{
@@ -87,7 +86,7 @@ textarea{
     font-size: 1.1rem;
 }
 
-.nav-logo{
+#nav-logo{
     text-decoration: none;
     color: var(--black-color)
 }
@@ -109,7 +108,7 @@ textarea{
 }
 
 
-.product > .name{
+.card-title{
     font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -126,21 +125,20 @@ textarea{
 ===============*/
 
 /* navbar */
-.nav-menu{
-    display: flex;
-}
 
-.nav-list-item{
-    padding: 1em;
-}
 
-.nav-logo{
+#nav-logo{
     display: flex;
     align-items: center;
 }
 
 
 /* showcase */
+.main{
+    text-align: center;
+    background-color:var(--beige-color);
+}
+
 .products-showcase{
     background-color: var(--accent-color);
     padding: 1.5em 2em;
@@ -161,7 +159,8 @@ textarea{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
-.product{
+#card{
+    width: 23rem;
     background-color: var(--chocolate-color);
     padding: 1em 2em;
     border-radius: 2rem;
@@ -169,15 +168,15 @@ textarea{
     margin: 1em 2.5em;
 }
 
-.product > .name{
+.card > #name{
     margin-bottom: 0;
 }
 
-.product > .product-img{
+.card > .card-img-top{
     border-radius: 2.5rem;
 }
 
-.add-to-card{
+#add-to-card{
     cursor: pointer;
     border-radius: 0.5em;
     border: none;
@@ -185,7 +184,7 @@ textarea{
     outline: none;
 }
 
-.add-to-card:hover{
+#add-to-card:hover{
     opacity: 0.9;
 }
 
@@ -241,38 +240,37 @@ textarea{
 
 /* footer */
 .footer{
-  background-color: var(--beige-color);
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding: 0 2em;
-  padding-bottom: 3em;
+    background-color: var(--beige-color);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 2em;
+    padding-bottom: 3em;
 }
-
-.footer-info{
-  flex: 75%;
-}
-
-.footer-links{
-  flex: 25%;
-}
-
-.footer-main{
-  display: flex;
-  margin-bottom: 3em;
-  align-items: center;
-}
-
-.footer-number{
-  margin: 0;
-  margin-bottom: 0.625em;
-}
-
-.footer-link:hover{
-  opacity: 0.8;
-}
-
-.footer-list-item{
-  margin-bottom: 0.375em;
-}
+  
+  .footer-info{
+    flex: 75%;
+  }
+  
+  .footer-links{
+    flex: 25%;
+  }
+  
+  .footer-main{
+    display: flex;
+    margin-bottom: 3em;
+    align-items: center;
+  }
+  
+  .footer-number{
+    margin: 0;
+    margin-bottom: 0.625em;
+  }
+  
+  .footer-link:hover{
+    opacity: 0.8;
+  }
+  
+  .footer-list-item{
+    margin-bottom: 0.375em;
+  }
